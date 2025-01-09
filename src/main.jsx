@@ -12,6 +12,7 @@ import {
 import Register from './component/Register.jsx'
 import Login from './component/Login.jsx'
 import Contact from './component/Contact.jsx'
+import SingleProduct from './component/SingleProduct.jsx'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element:<Contact />
+      },
+      {
+        path: "/product/:id",
+        element:<SingleProduct />
       }
     ]
   }
