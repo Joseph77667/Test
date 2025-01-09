@@ -6,9 +6,9 @@ import Navbar from "./component/Navbar";
 
 function App() {
   return (
-    <div className="container mx-auto py-3">
+    <div>
       <Navbar />
-      <main>
+      <main className="px-10">
         <Outlet />
       </main>
     </div>
