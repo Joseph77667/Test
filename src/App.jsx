@@ -1,8 +1,9 @@
-import { useState } from "react";
+
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import "./index.css";
 import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main className="px-20">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 }

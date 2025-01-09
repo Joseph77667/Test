@@ -3,8 +3,8 @@ import React from 'react'
 function Pagination() {
   return (
     <div class="flex flex-col mt-5 items-center justify-between">
-        <h1>Showing 4 out of 40</h1>
-      <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+        <h1 className='text-xl'>Showing 4 out of 40</h1>
+      <nav class="isolate inline-flex mt-2 -space-x-px rounded-md shadow-sm" aria-label="Pagination">
         <a href="#" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
           <span class="sr-only">Previous</span>
           <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
