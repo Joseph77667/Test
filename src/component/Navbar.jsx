@@ -1,38 +1,67 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className='py-5 px-10 bg-black text-white'>
+    <div className="py-5 px-10 bg-black text-white">
       <nav className="flex justify-between items-center">
         <div>
-          <h1 className="font-bold text-3xl"><Link to="/">Logo</Link></h1>
+          <h1 className="font-bold text-3xl hover:text-blue-400">
+            <Link to="/">Logo</Link>
+          </h1>
         </div>
-        <div>
-          <ul className="flex space-x-5 list-none">
-          <li>
-            <Link to="/" 
-            className="list-none text-lg hover:text-orange-400">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/product" 
-            className="list-none text-lg hover:text-orange-400">
-              Product
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" 
-            className="list-none text-lg hover:text-orange-400">
-              About
-            </Link>
-          </li>
-          </ul>
+        <div className="flex justify-between">
+          <div className="pr-40">
+            <ul className="flex space-x-5 list-none">
+              <li>
+                <Link
+                  to="/"
+                  className="list-none text-lg hover:text-blue-400"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/product"
+                  className="list-none text-lg hover:text-blue-400"
+                >
+                  Product
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="list-none text-lg hover:text-blue-400"
+                >
+                  About
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button>
+              <Link
+                to="/login"
+                className="text-lg text-white rounded-sm mr-5 px-3 py-1 bg-blue-400 hover:bg-blue-200 hover:text-black"
+              >
+                Login
+              </Link>
+            </button>
+            <button>
+              <Link
+                Link
+                to="/contact"
+                className="text-lg text-white rounded-sm mr-5 px-3 py-1 bg-blue-400 hover:bg-blue-200 hover:text-black"
+              >
+                Contact
+              </Link>
+            </button>
+          </div>
         </div>
       </nav>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
